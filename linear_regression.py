@@ -36,6 +36,45 @@ reg.predict([[275, 3, 11]])
 reg.predict([[230, 4, 10], [230, 6, 0], [350, 4, 2]])
 
 
+# In[5]:
+
+
+# Multiple linear regression formula:
+# y = a + b1x1 + b2x2 + b3x3 + ...
+
+
+# In[6]:
+
+
+# Calculate coefficients
+reg.coef_
+
+
+# In[7]:
+
+
+# Calculate constant
+reg.intercept_
+
+
+# In[8]:
+
+
+# Examine formula
+
+a = reg.intercept_
+b1 = reg.coef_[0]
+b2 = reg.coef_[1]
+b3 = reg.coef_[2]
+
+x1 = 275
+x2 = 3
+x3 = 11
+y = a + b1*x1 + b2*x2 + b3*x3
+
+y
+
+
 # In[ ]:
 
 
